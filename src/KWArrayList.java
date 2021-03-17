@@ -5,14 +5,12 @@ import java.util.AbstractList;
 /**
  * This class implements some of the methods of the Java
  *  ArrayList class.
- *  @author Your Name
+ *  @author Jay An
  */
 public class KWArrayList<E> extends AbstractList<E>    
 {
-    // Data Fields
-	
-	//DirectoryEntry DE = new DirectoryEntry();
-	
+    // Data Fields	
+    
     /** The default initial capacity */
     private static final int INITIAL_CAPACITY = 10;
     /** The underlying data array */
@@ -31,22 +29,16 @@ public class KWArrayList<E> extends AbstractList<E>
         theData = (E[]) new Object[capacity];
     }
 
-    /*Your programming exercise 1 goes here*/
-    /**
-     * Construct an empty KWArrayList with a specified initial capacity
+  
+     /* Construct an empty KWArrayList with a specified initial capacity
      * @param capacity The initial capacity  
      */
     public KWArrayList(int capacity) {
     	this.capacity = capacity;
     	E[] theData = (E[]) new Object[capacity];
     }	
-	
-    /*</exercise>*/
 
-
-    /*Your programming exercise 2 goes here*/	 
-	 /**
-     * Appends the specified element to the end of this list.
+     /* Appends the specified element to the end of this list.
 	 * @param string 
      * 
      * @param theEntry - The value to be inserted
@@ -88,9 +80,8 @@ public class KWArrayList<E> extends AbstractList<E>
         return theData[index];
     }
 
-    /*Your programming exercise 3 goes here*/
-    /**
-     * Set the value in the array based on its index.
+ 
+     /* Set the value in the array based on its index.
      * @param index - The index of the item desired
      * @param newValue - The new value to store at this position
      * @return The old value at this position
@@ -108,9 +99,7 @@ public class KWArrayList<E> extends AbstractList<E>
     	return  oldValue;
     }
 
-    /*Your programming exercise 4 goes here*/
-    /**
-     * Add an entry based on its index
+    /* Add an entry based on its index
      * @param index - The index of the entry to be added
      * @return The value added
      * @throws ArrayIndexOutOfBoundsException - if the index
@@ -132,9 +121,7 @@ public class KWArrayList<E> extends AbstractList<E>
     } 
     
     
-    /*Your programming exercise 5 goes here*/
-    /**
-     * Remove an entry based on its index
+     /* Remove an entry based on its index
      * @param index - The index of the entry to be removed
      * @return The value removed
      * @throws ArrayIndexOutOfBoundsException - if the index
@@ -157,10 +144,9 @@ public class KWArrayList<E> extends AbstractList<E>
 	
 	
 	
-	/*Your programming exercise 6 goes here*/
-	/**
-		Removes middle object and re-inserts it at the end 
-		@return E object removed and re-inserted
+	
+	/*	Removes middle object and re-inserts it at the end 
+	*	@return E object removed and re-inserted
 	*/
 	public E removeMiddleInsertEnd() {
 		int midPosition = size/2;
@@ -185,10 +171,8 @@ public class KWArrayList<E> extends AbstractList<E>
     public int size() {
         return size;
     }
-
-    /*Your programming exercise 7 goes here*/
-    /**
-     * Returns the index of the first occurrence of the specified element
+    
+     /* Returns the index of the first occurrence of the specified element
      * in this list, or -1 if this list does not contain the element
      * @param item The object to search for
      * @returns The index of the first occurrence of the specified item
@@ -208,6 +192,5 @@ public class KWArrayList<E> extends AbstractList<E>
 		return index;
 		
     }
-    /*</exercise>*/
+ 
 }
-/*</listing>*/
